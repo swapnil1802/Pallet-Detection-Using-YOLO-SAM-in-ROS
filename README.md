@@ -2,7 +2,9 @@
 Pallet detection in a warehouse setting using yolov8 finetuned on pallet dataset and segmented using SAM model in ROS1
 
 The yolo V8 trained and finetuned model should be downloaded from: https://drive.google.com/file/d/12hk3OTOCA5ZUyz3EoQXK69h_czPzGZmZ/view?usp=sharing
-The SAM model can be downloaded from:
+
+The SAM model can be downloaded from:https://drive.google.com/file/d/1_3jgDOhT5fpXjwuN4GM2BH7xQaRILQV6/view?usp=drive_link
+
 The script for training the model can be downloaded from: https://colab.research.google.com/drive/1oQuPFNHG8WZIp5EXHr-2VpFERw113_IA?usp=sharing
 
 Final segmentation of test images can be seen at: https://drive.google.com/drive/folders/1x9rt_8n9XX9neZvvFPeKhj-yt1FDudFn?usp=drive_link
