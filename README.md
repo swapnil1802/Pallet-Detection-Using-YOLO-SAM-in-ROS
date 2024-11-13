@@ -5,6 +5,8 @@ The yolo V8 trained and finetuned model should be downloaded from: https://drive
 
 The SAM model can be downloaded from:https://drive.google.com/file/d/1_3jgDOhT5fpXjwuN4GM2BH7xQaRILQV6/view?usp=drive_link
 
+NOTE: After downloading these models, the paths specified in the yolo_detection _node.py need to be changed with the final paths of these files
+
 The script for training the model can be downloaded from: https://colab.research.google.com/drive/1oQuPFNHG8WZIp5EXHr-2VpFERw113_IA?usp=sharing
 
 Final segmentation of test images can be seen at: https://drive.google.com/drive/folders/1x9rt_8n9XX9neZvvFPeKhj-yt1FDudFn?usp=drive_link
