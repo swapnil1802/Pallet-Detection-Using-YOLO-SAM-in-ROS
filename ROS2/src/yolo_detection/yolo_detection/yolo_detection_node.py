@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#Developed By Swapnil Puranik
 
 import rclpy
 from rclpy.node import Node
@@ -16,21 +17,22 @@ class CameraDisplayNode(Node):
 
         #self.image_pub = self.create_publisher(Image, "processed_image", 10)
 
-        print("Its running!!!")
+        print("-----------Testing------------")
         # Load YOLO and SAM models
-        self.model = YOLO("/home/agrolab/Downloads/best.pt")
-        self.sam_model = SAM("/home/agrolab/Downloads/sam2_b.pt")
+        self.model = YOLO("/home/agrolab/Downloads/best.pt")  # This path needs to be changed after downloading the models from link given in ReadMe file.
+        self.sam_model = SAM("/home/agrolab/Downloads/sam2_b.pt") # This path needs to be changed after downloading the models from link given in ReadMe file.
         
         # Create a CvBridge instance
         self.bridge = CvBridge()
 
         # Create a QoS profile
+        #Qos of the bag file and the node were not the same.
         qos_profile = QoSProfile(
             reliability=ReliabilityPolicy.BEST_EFFORT,
-            depth=10  # Queue size
+            depth=10  
         )
         
-        # Subscribe to RGB and depth topics
+        # Subscribe to required topics
         self.image_sub = self.create_subscription(
             Image,
             "/robot1/zed2i/left/image_rect_color",
@@ -59,15 +61,6 @@ class CameraDisplayNode(Node):
 
         except Exception as e:
             self.get_logger().error(f"CvBridge Error: {e}")
-
-    # def depth_callback(self, msg):
-    #     try:
-    #         # Convert the depth message from 16UC1 to meters
-    #         self.depth_frame = self.bridge.imgmsg_to_cv2(msg, "16UC1").astype(np.float32) / 1000.0  # Convert mm to meters
-    #         self.get_logger().info("Received Depth frame")
-
-    #     except CvBridge.CvBridgeError as e:
-    #         self.get_logger().error(f"CvBridge Error: {e}")
 
     def process_segmentation(self):
         if self.frame is None:
@@ -112,13 +105,9 @@ class CameraDisplayNode(Node):
             else:
                 self.get_logger().warn("No valid bounding boxes detected for SAM processing.")
 
-        # Display the frame with YOLO detections and SAM segmentation masks
+        
         cv2.imwrite("YOLO_SAM_Segmentation_Depth.jpg", self.frame)
-        # #cv2.waitKey(1)
-        # key = cv2.waitKey(1) & 0xFF
-        # if key == ord('q'):  # Optionally allow quitting with 'q'
-        #     rclpy.shutdown()
-        #     cv2.destroyAllWindows()
+        
 
 def main(args=None):
     rclpy.init(args=args)
