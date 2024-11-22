@@ -1,0 +1,38 @@
+[0.490s] Invoking command in '/home/agrolab/swap_ws/build/yolo_detection': PYTHONPATH=/home/agrolab/swap_ws/build/yolo_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/agrolab/swap_ws/build/yolo_detection/build
+[0.693s] running develop
+[0.693s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.693s]   warnings.warn(
+[0.844s] Removing /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo-detection.egg-link (link to .)
+[0.862s] Invoked command in '/home/agrolab/swap_ws/build/yolo_detection' returned '0': PYTHONPATH=/home/agrolab/swap_ws/build/yolo_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/agrolab/swap_ws/build/yolo_detection/build
+[0.864s] Invoking command in '/home/agrolab/swap_ws/src/yolo_detection': PYTHONPATH=/home/agrolab/swap_ws/build/yolo_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolo_detection build --build-base /home/agrolab/swap_ws/build/yolo_detection/build install --record /home/agrolab/swap_ws/build/yolo_detection/install.log --single-version-externally-managed install_data --force
+[1.050s] running egg_info
+[1.051s] writing ../../build/yolo_detection/yolo_detection.egg-info/PKG-INFO
+[1.051s] writing dependency_links to ../../build/yolo_detection/yolo_detection.egg-info/dependency_links.txt
+[1.051s] writing entry points to ../../build/yolo_detection/yolo_detection.egg-info/entry_points.txt
+[1.051s] writing requirements to ../../build/yolo_detection/yolo_detection.egg-info/requires.txt
+[1.051s] writing top-level names to ../../build/yolo_detection/yolo_detection.egg-info/top_level.txt
+[1.127s] reading manifest file '../../build/yolo_detection/yolo_detection.egg-info/SOURCES.txt'
+[1.128s] writing manifest file '../../build/yolo_detection/yolo_detection.egg-info/SOURCES.txt'
+[1.128s] running build
+[1.128s] running build_py
+[1.128s] creating /home/agrolab/swap_ws/build/yolo_detection/build
+[1.128s] creating /home/agrolab/swap_ws/build/yolo_detection/build/lib
+[1.128s] creating /home/agrolab/swap_ws/build/yolo_detection/build/lib/yolo_detection
+[1.128s] copying yolo_detection/yolo_detection_node.py -> /home/agrolab/swap_ws/build/yolo_detection/build/lib/yolo_detection
+[1.129s] copying yolo_detection/__init__.py -> /home/agrolab/swap_ws/build/yolo_detection/build/lib/yolo_detection
+[1.129s] running install
+[1.129s] running install_lib
+[1.129s] creating /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection
+[1.130s] copying /home/agrolab/swap_ws/build/yolo_detection/build/lib/yolo_detection/yolo_detection_node.py -> /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection
+[1.130s] copying /home/agrolab/swap_ws/build/yolo_detection/build/lib/yolo_detection/__init__.py -> /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection
+[1.130s] byte-compiling /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection/yolo_detection_node.py to yolo_detection_node.cpython-310.pyc
+[1.131s] byte-compiling /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection/__init__.py to __init__.cpython-310.pyc
+[1.131s] running install_data
+[1.131s] copying resource/yolo_detection -> /home/agrolab/swap_ws/install/yolo_detection/share/ament_index/resource_index/packages
+[1.131s] copying package.xml -> /home/agrolab/swap_ws/install/yolo_detection/share/yolo_detection
+[1.131s] running install_egg_info
+[1.132s] Copying ../../build/yolo_detection/yolo_detection.egg-info to /home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages/yolo_detection-0.0.0-py3.10.egg-info
+[1.132s] running install_scripts
+[1.145s] Installing yolo_detection_node script to /home/agrolab/swap_ws/install/yolo_detection/lib/yolo_detection
+[1.146s] writing list of installed files to '/home/agrolab/swap_ws/build/yolo_detection/install.log'
+[1.161s] Invoked command in '/home/agrolab/swap_ws/src/yolo_detection' returned '0': PYTHONPATH=/home/agrolab/swap_ws/build/yolo_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/agrolab/swap_ws/install/yolo_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolo_detection build --build-base /home/agrolab/swap_ws/build/yolo_detection/build install --record /home/agrolab/swap_ws/build/yolo_detection/install.log --single-version-externally-managed install_data --force
