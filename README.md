@@ -1,11 +1,11 @@
 # Pallet-Detection-Using-YOLO-SAM-in-ROS
-Pallet detection in a warehouse setting using yolov8 finetuned on pallet dataset and segmented using SAM model in ROS1
+Pallet detection in a warehouse setting using yolov8 finetuned on pallet dataset and segmented using SAM model in ROS1 and ROS2
 
 The yolo V8 trained and finetuned model should be downloaded from: https://drive.google.com/file/d/12hk3OTOCA5ZUyz3EoQXK69h_czPzGZmZ/view?usp=sharing
 
 The SAM model can be downloaded from:https://drive.google.com/file/d/1_3jgDOhT5fpXjwuN4GM2BH7xQaRILQV6/view?usp=drive_link
 
-NOTE: After downloading these models, the paths specified in the yolo_detection _node.py need to be changed with the final paths of these files
+NOTE: After downloading these models, the paths specified in the yolo_detection_node.py need to be changed with the final paths of these files
 
 The script for training the model can be downloaded from: https://colab.research.google.com/drive/1oQuPFNHG8WZIp5EXHr-2VpFERw113_IA?usp=sharing
 
@@ -13,6 +13,9 @@ Final segmentation of test images can be seen at: https://drive.google.com/drive
 
 The final workflow can detect pallets, floors, carts and flat surfaces and segment them as well along with detecting distance.
 The workflow was tested in ROS1 with Realsense D435i camera module which has depth sensors as well.
+
+Edit: The workflow has also been tested in ROS2 with a bag file which publishes data on "/robot1/zed2i/left/image_rect_color" topic.
+      The final segmented image has been attached in the ROS2 folder.
 
 For this project, various YOLO models were finetuned and tested. 
 YOLO V11 detection model + SAM Model
